@@ -1,7 +1,7 @@
 package main
 
 import (
-	"mq_admin/service/ons"
+	"github.com/Dreamheart/apsarastack-mq-go-sdk/service/ons"
 )
 
 func main() {

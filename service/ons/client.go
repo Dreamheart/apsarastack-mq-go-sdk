@@ -1,7 +1,7 @@
 package ons
 
 import (
-	"mq_admin/mqsdk"
+	"github.com/Dreamheart/apsarastack-mq-go-sdk/mqsdk"
 )
 
 type Client struct {
