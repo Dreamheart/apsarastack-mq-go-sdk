@@ -19,7 +19,7 @@ func CreateCreateConsumerRequest(regionId string, topic string,ConsumerId string
 
 	request.InitWithApiInfo("/json/subscription/create",http.MethodPost)
 	request.AddQueryParams("topic",topic)
-	request.AddQueryParams("ConsumerId",ConsumerId)
+	request.AddQueryParams("consumerId",ConsumerId)
 	request.AddQueryParams("_regionId",regionId)
 
 	return

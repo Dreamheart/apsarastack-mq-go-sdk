@@ -19,7 +19,7 @@ func CreateDeleteProducerRequest(regionId string, topic string,producerId string
 
 	request.InitWithApiInfo("/json/publish/delete",http.MethodPost)
 	request.AddQueryParams("topic",topic)
-	request.AddQueryParams("ProducerId",producerId)
+	request.AddQueryParams("producerId",producerId)
 	request.AddQueryParams("_regionId",regionId)
 
 	return

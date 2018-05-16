@@ -19,7 +19,7 @@ func CreateDeleteConsumerRequest(regionId string, topic string,ConsumerId string
 
 	request.InitWithApiInfo("/json/subscription/delete",http.MethodPost)
 	request.AddQueryParams("topic",topic)
-	request.AddQueryParams("ConsumerId",ConsumerId)
+	request.AddQueryParams("consumerId",ConsumerId)
 	request.AddQueryParams("_regionId",regionId)
 
 	return
