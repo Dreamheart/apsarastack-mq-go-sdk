@@ -105,7 +105,7 @@ func (request *CommonRequest) BuildQueries() string {
 
 func (request *CommonRequest) BuildUrl() string {
 	//return strings.Replace(request.Domain + request.PathPattern+ request.BuildQueries(), "&", "\\&",-1)
-	return strings.ToLower(request.Scheme) + "://" + request.Domain + request.PathPattern+ request.BuildQueries()
+	return request.Domain + request.PathPattern+ request.BuildQueries()
 }
 
 func (request *CommonRequest) InitWithApiInfo(path string, method string) {
